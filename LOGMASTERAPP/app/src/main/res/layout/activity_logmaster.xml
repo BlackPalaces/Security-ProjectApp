@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LOGMASTER">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:cardBackgroundColor="#553A90"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUARANTINE"
+                android:textColor="#FBFBFB"
+                android:textSize="16sp"
+                android:translationX="5dp"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/buttonbackwifi"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangle_button"
+                android:text="BACK"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:translationX="220dp"
+                android:translationY="5dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView5"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="#E6DDD3"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title8"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textColor="#000000"
+                android:translationX="5dp"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#549E60"
+                android:text="QUARANTINE"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/ScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="659dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CardView5">
+
+        <LinearLayout
+            android:id="@+id/LayoutAddText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Column"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title5"
+                    android:layout_width="296dp"
+                    android:layout_height="42dp"
+                    android:background="#F36161"
+                    android:text="APPSTOP"
+                    android:textColor="#FBFBFB"
+                    android:textSize="14sp"
+                    android:translationX="5dp"
+                    android:translationY="-11dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/restore"
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="1"
+                    android:text="restore"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Pack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonwifi"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-20dp"
+                android:background="#553A90"
+                android:shadowColor="#150808"
+                android:shadowRadius="4"
+                android:text="WIFI Manager"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:translationX="290dp"
+                android:translationY="20dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Pack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/InputAppName"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Package_name"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/buttonStopApp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="#7E2B2B"
+                android:text="Stop App"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

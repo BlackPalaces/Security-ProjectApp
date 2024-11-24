@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:cardBackgroundColor="#553A90"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGMASTER"
+                android:textColor="#FBFBFB"
+                android:textSize="16sp"
+                android:translationX="5dp"
+                android:translationY="5dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="118dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rectangle_button"
+                android:text="QUARANTINE"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:translationX="192dp"
+                android:translationY="5dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="#E6DDD3"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardView1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textColor="#000000"
+                android:translationX="5dp"
+                android:translationY="5dp" />
+
+            <TextView
+                android:id="@+id/title9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="|Tag"
+                android:textColor="#000000"
+                android:translationX="-10dp"
+                android:translationY="5dp" />
+
+            <TextView
+                android:id="@+id/title10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="|Date and Time"
+                android:textColor="#000000"
+                android:translationX="-15dp"
+                android:translationY="5dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="659dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="com.android.chrome    |updateDownloadStatus  |2023-10-01 13:33:07.449"
+                android:textColor="#000000"
+                android:textSize="32px"
+                android:translationX="5dp" />
+
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="com.google.android.gms  |ContentDownloader   |2023-10-01 14:15:06.535 "
+                android:textColor="#000000"
+                android:textSize="32px"
+                android:translationX="5dp" />
+
+            <TextView
+                android:id="@+id/title11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="com.example.logmaster_app  |EGL_emulation    |2023-10-05 12:52:29.016 "
+                android:textColor="#000000"
+                android:textSize="32px"
+                android:translationX="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
